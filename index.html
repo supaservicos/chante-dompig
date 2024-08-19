@@ -2,44 +2,113 @@
 <html lang="pt">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content=" ">
-
-    <title> Title </title>
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content=" " />
+    <title>Chanté Domoig</title>
     <!-- Font -->
-
-
     <!-- Icons -->
-
     <!-- Style -->
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/objects.css">
-    <link rel="stylesheet" href="/assets/css/root.css">
-    <link rel="stylesheet" href="/assets/css/midiaQ.css">
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/objects.css" />
+    <link rel="stylesheet" href="/assets/css/root.css" />
+    <link rel="stylesheet" href="/assets/css/colormode.css" />
+    <link rel="stylesheet" href="/assets/css/midiaQ.css" />
 </head>
 
 <body>
-
     <!-- Header -->
     <header class="flex a-center j-between normal-font small-sz">
-
+        <section class="logo">
+            <h1 class="text-logo">CHANTÉ DOMPIG</h1>
+        </section>
+        <section class="navgation">
+            <nav class="navbar">
+                <ul class="nav-list flex">
+                    <li class="nav-link">
+                        <a href="#" class="link">DOMPIG</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#" class="link">HIGHLIGHTS</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#" class="link">BRANS</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#" class="link">PARTNERS</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <section class="mobile-menu hide-desktop"></section>
     </header>
-
     <!-- Main Content -->
-    <main class="container">
-
+    <main class="main-container">
+        <section class="hero-section">
+            <section class="hero-content flex row j-between">
+                <section class="info-content">
+                    <section class="mood">
+                        <div>
+                            <input type="radio" name="color-mode" id="mode-1" value="mode-1" checked />
+                            <label for="mode-1"><img src="/content/team-1.svg" alt="Modo 1" /></label>
+                        </div>
+                        <div>
+                            <input type="radio" name="color-mode" id="mode-2" value="mode-2" />
+                            <label for="mode-2"><img src="/content/team-2.svg" alt="Modo 2" /></label>
+                        </div>
+                        <div>
+                            <input type="radio" name="color-mode" id="mode-3" value="mode-3" />
+                            <label for="mode-3"><img src="/content/team-3.svg" alt="Modo 3" /></label>
+                        </div>
+                    </section>
+                </section>
+                <section class="highlight-contnt">2</section>
+            </section>
+            <!-- SCORE -->
+            <section class="score-section j-between">
+                <section class="score-card">
+                    <h2 class="score-title">Gools</h2>
+                    <div class="score-count">
+                        <h1>22</h1>
+                    </div>
+                </section>
+                <section class="score-card">
+                    <h2 class="score-title">Assists</h2>
+                    <div class="score-count">
+                        <h1>11</h1>
+                    </div>
+                </section>
+                <section class="score-card">
+                    <h2 class="score-title">Matches Played</h2>
+                    <div class="score-count">
+                        <h1>89</h1>
+                    </div>
+                </section>
+                <section class="score-card">
+                    <h2 class="score-title">Minutes Played</h2>
+                    <div class="score-count">
+                        <h1>1755</h1>
+                    </div>
+                </section>
+            </section>
+        </section>
     </main>
-    
-
     <!-- Footer -->
-    <footer>
-
-    </footer>
-
+    <footer></footer>
     <!-- Script -->
     <script src="/assets/js/index.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const modeSelectors = document.querySelectorAll('input[name="color-mode"]');
+            
+            modeSelectors.forEach(selector => {
+                selector.addEventListener('change', function() {
+                    document.body.className = ''; // Remove all classes
+                    document.body.classList.add(this.value); // Add the selected mode class
+                });
+            });
+        });
+        </script>
 </body>
 
 </html>

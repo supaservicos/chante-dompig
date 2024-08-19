@@ -1,0 +1,84 @@
+.mood div{
+    background-color: #f0f0f03b;
+    border-radius: 1rem;
+}
+
+.mood div:nth-child(1){
+    background-color: #e11c2c56;
+}
+
+.mood div:nth-child(2){
+    background-color: #0067a765;
+}
+
+.mood div:nth-child(3){
+    background-color: #fb6b2875;
+}
+
+.mood div label{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:0.5rem 0.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.mood div input{
+    display: none;
+    overflow: hidden;
+}
+
+.mood div label img{
+    width: 4rem;
+}
+
+/* Default mode (index) */
+body.mode-1 .hero-section {
+    background-image: url('/content/hero-bg/hbg-1.png');
+}
+
+/* Mode 2 */
+body.mode-2 .hero-section {
+    background-image: url('/content/photo/image00038.jpeg');
+}
+
+/* Mode 3 */
+body.mode-3 .hero-section {
+    background-image: url('/content/photo/image00030.jpeg');
+}
+
+/* Example of primary color changes */
+body.mode-1 {
+    --primary-color: #E11C2B;
+}
+
+body.mode-2 {
+    --primary-color: #0066A7;
+}
+
+body.mode-3 {
+    --primary-color: #FB6A28;
+}
+
+/* Apply transitions to elements using the primary color */
+.hero-section {
+    transition: background-image 0.5s ease-in-out;
+}
+
+.some-element {
+    color: var(--primary-color);
+    transition: color 0.5s ease-in-out;
+}
+
+/* Opacity for non-active modes */
+.mood input:not(:checked) + label {
+    opacity: 0.4;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.mood input:checked + label {
+    opacity: 1;
+}

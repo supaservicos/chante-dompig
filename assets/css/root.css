@@ -9,6 +9,9 @@
     --light-color: #ececec2f;
     --gray-color: #929292;
 
+    --text-white: #FFFFFF;
+    --text-black: #000000;
+
     /* Size */
     --big-sz: 3.4rem;
     --mid-sz: 2.4rem;
@@ -25,12 +28,39 @@
     --button-radius: 1rem;
 }
 
+
+.hero-section {
+    transition: background-image 0.5s ease-in-out;
+}
+
+.some-element {
+    color: var(--primary-color);
+    transition: color 0.5s ease-in-out;
+}
+
+/* Opacity for non-active modes */
+.mood input:not(:checked) + label {
+    opacity: 0.4;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.mood input:checked + label {
+    opacity: 1;
+}
+
 .container {
     width: 100%;
 }
 
 .content{
-    padding: 5rem
+    padding: 5rem;
+    height: 100vh;
+}
+
+.main-container{
+    /* padding-top: 5rem;   */
+    background-color: var(--dark-color);
+    color: var(--text-white);
 }
 
 .over-hidden{
@@ -102,4 +132,15 @@ p{
 }
 .t-center{
     text-align: center;
+}
+
+.link{
+    color: var(--text-white);
+}
+
+.link:hover,
+.link:active,
+.link:focus{
+    transition: all 0.3s ease;
+    color: var(--primary-color);
 }
