@@ -77,6 +77,10 @@
 }
 
 /* Fonts */
+.icon{
+    font-size: 1.5rem;
+}
+
 h1{
     font-size: 2rem;
 }
@@ -89,9 +93,12 @@ h3{
     font-size: 1rem;
 }
 
+
 p{
-    font-size: 1rem;
+    font-size: 1.5rem;
+    text-align: justify;
 }
+
 
 .normal-font {
     font-weight: var(--normal-font);
@@ -125,6 +132,14 @@ p{
 
 .j-between{
     justify-content: space-between;
+}
+
+.j-evenly{
+    justify-content: space-evenly;
+}
+
+.j-center{
+    justify-content: center;
 }
 
 .j-around{
