@@ -1,0 +1,125 @@
+<!-- Hero Section -->
+<section id="home" class="hero flex j-between f-center f-width">
+    <div id="hero-content" class="hero-content">
+        
+    </div>
+    <div class="hero-controls">
+        <button id="prev-button"><ion-icon name="chevron-back-outline"></ion-icon></button>
+        <button id="pause-button"><ion-icon name="pause"></ion-icon></button>
+        <button id="next-button"><ion-icon name="chevron-forward-outline"></ion-icon></button>
+    </div>
+
+          <!-- <section class="hero-text flex col j-center">
+                <section class="text">
+                    <h1>Informação de qualidade, relevância e valor para o público angolano. Inscreva-se no Youtube.</h1>
+                </section>
+                <section class="flex t-center">
+                    <a href="https://www.youtube.com/@maiskwanza" class="newsletter-button" target="_blank">Inscrever-se</a>
+                </section>
+            </section> -->  
+    </section>
+    <script>
+        const heroContent = [
+    {
+        background: 'linear-gradient( #0b0b0bcc, #06060600),  url("/assets/img/primary.jpg")',
+        content: `
+        <section class="hero-text flex col j-center">
+                <section class="text">
+                    <h1>Informação de qualidade, relevância e valor para o público angolano. Inscreva-se no Youtube.</h1>
+                </section>
+                <section class="flex t-center">
+                    <a href="https://www.youtube.com/@maiskwanza" class="newsletter-button" target="_blank">Inscrever-se</a>
+                </section>
+            </section>`
+    },
+    {
+        background: 'linear-gradient( #0b0b0bcc, #06060600),  url("assets/img/second.jpg")',
+        content:  `
+        <section class="hero-text flex col j-center">
+                <section class="text">
+                    <h1>Já viu o último episódio? Clique no link abaixo e veja!</h1>
+                </section>
+                <section class="flex t-center">
+                    <a href="/podcasts" class="newsletter-button" target="_blank">Ultimos episódios</a>
+                </section>
+            </section>`
+    },
+    {
+        background: 'linear-gradient( #0b0b0bcc, #06060600),  url("assets/img/third.jpg")',
+        content:  `
+        <section class="hero-text flex col j-center">
+                <section class="text">
+                    <h1> "Citação inspiradora..."</h1>
+                </section>
+                <section class="flex t-center">
+                    <a href="https://www.youtube.com/@maiskwanza" class="newsletter-button" target="_blank">Inscrever-se</a>
+                </section>
+            </section>`
+    },
+    {
+        background: 'linear-gradient( #0b0b0bcc, #06060600),  url("assets/img/fourth.jpg")',
+         content:  `
+        <section class="hero-text flex col j-center">
+                <section class="text">
+                    <h1>Informação de qualidade, relevância e valor para o público angolano. Inscreva-se no Youtube.</h1>
+                </section>
+                <section class="flex t-center">
+                    <a href="https://www.youtube.com/@maiskwanza" class="newsletter-button" target="_blank">Inscrever-se</a>
+                </section>
+            </section>`
+    }
+];
+
+let currentIndex = 0;
+let isPaused = false;
+let intervalId;
+
+const heroSection = document.getElementById('home');
+const heroContentContainer = document.getElementById('hero-content');
+const pauseButton = document.getElementById('pause-button');
+
+function updateHero() {
+    // Atualiza o background e o conteúdo do hero
+    heroSection.style.backgroundImage = heroContent[currentIndex].background;
+    heroContentContainer.innerHTML = heroContent[currentIndex].content;
+}
+
+function nextHero() {
+    currentIndex = (currentIndex + 1) % heroContent.length;
+    updateHero();
+}
+
+function prevHero() {
+    currentIndex = (currentIndex - 1 + heroContent.length) % heroContent.length;
+    updateHero();
+}
+
+function togglePause() {
+    if (isPaused) {
+        startAutoRotate();
+        pauseButton.innerHTML = '<ion-icon name="pause"></ion-icon>';
+    } else {
+        stopAutoRotate();
+        pauseButton.innerHTML = '<ion-icon name="play"></ion-icon>';
+    }
+    isPaused = !isPaused;
+}
+
+function startAutoRotate() {
+    intervalId = setInterval(nextHero, 15000);
+}
+
+function stopAutoRotate() {
+    clearInterval(intervalId);
+}
+
+// Adiciona os listeners para os botões
+document.getElementById('next-button').addEventListener('click', nextHero);
+document.getElementById('prev-button').addEventListener('click', prevHero);
+pauseButton.addEventListener('click', togglePause);
+
+// Inicia a rotação automática e o primeiro conteúdo
+startAutoRotate();
+updateHero();
+
+    </script>
