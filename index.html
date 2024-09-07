@@ -7,6 +7,7 @@
         <title>Chanté Domoig</title>
         <!-- Font -->
         <!-- Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
         <!-- Style -->
         <link rel="stylesheet" href="/assets/css/style.css">
@@ -146,11 +147,43 @@
                     </section>
                 </section>
             </section>
+
+            <section class="highlights-section seccao flex col j-between" id="highlights">
+                <h1 class="section-title">HIGHLIGHTS</h1>
+                <section class="section-content flex col" >
+                    <section id="section-content">
+                       
+                    </section>
+                    <div class="navbtn-section flex row">
+                        <a id="prev-button" class="btn-nav">
+                            <img src="/content/icons/chevron-back.svg" alt="">
+                        </a>
+                        <a id="next-button" class="btn-nav">
+                            <img src="/content/icons/chevron-forward-outline.svg" alt="">
+                        </a>
+                    </div>
+                </section>
+            </section>
+
+            <section class="seccao flex col j-between">
+                <h1 class="section-title">NATIONAL</h1>
+                <section class="section-content flex col" >
+                    <div class="navbtn-section flex row">
+                        <a id="prev-button" class="btn-nav">
+                            <img src="/content/icons/chevron-back.svg" alt="">
+                        </a>
+                        <a id="next-button" class="btn-nav">
+                            <img src="/content/icons/chevron-forward-outline.svg" alt="">
+                        </a>
+                    </div>
+                </section>
+            </section>
         </main>
         <!-- Footer -->
         <footer></footer>
         <!-- Script -->
         <script src="/assets/js/index.js"></script>
+        <script src="/assets/js/controls.js"></script>
         <script>
         document.addEventListener('DOMContentLoaded', function() {
             const modeSelectors = document.querySelectorAll('input[name="color-mode"]');
