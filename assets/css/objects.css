@@ -49,3 +49,11 @@
 .highligth-card:hover > img{
     filter: brightness(0.8);
 }
+.partner-card{
+    background: #000000c9;
+    padding: 4rem;
+}
+.partner-card:hover{
+    box-shadow: 0px 0px 3px var(--primary-color);
+    transition: 0.3s;
+}
