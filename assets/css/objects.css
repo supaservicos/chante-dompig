@@ -19,6 +19,11 @@
     align-items: center;
 }
 
+.btn-nav.active{
+    background-color: var(--primary-color);
+    color: var(--text-white);
+}
+
 .btn-nav:hover{
     background-color: var(--primary-color);
     color: var(--text-white);
