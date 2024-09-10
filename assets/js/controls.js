@@ -1,4 +1,42 @@
-const hlContent = [
+function createSlider(contentArray, sectionId, prevButtonId, nextButtonId) {
+    let currentIndex = 0;
+    let intervalId;
+
+    const hlsection = document.getElementById(sectionId);
+    const heroContentContainer = hlsection.querySelector('.section-content');
+
+    function updateHero() {
+        hlsection.style.backgroundImage = contentArray[currentIndex].background;
+        heroContentContainer.innerHTML = contentArray[currentIndex].content;
+    }
+
+    function nextHero() {
+        currentIndex = (currentIndex + 1) % contentArray.length;
+        updateHero();
+    }
+
+    function prevHero() {
+        currentIndex = (currentIndex - 1 + contentArray.length) % contentArray.length;
+        updateHero();
+    }
+
+    function startAutoRotate() {
+        intervalId = setInterval(nextHero, 30000);
+    }
+
+    function stopAutoRotate() {
+        clearInterval(intervalId);
+    }
+
+    document.getElementById(nextButtonId).addEventListener('click', nextHero);
+    document.getElementById(prevButtonId).addEventListener('click', prevHero);
+
+    startAutoRotate();
+    updateHero();
+}
+
+
+const highContent = [
     {
         background: 'linear-gradient(180deg, #ffffff00 0%, #6f717106 63%, #22242453 79%), url("../content/photo/image00014.jpeg")',
         content: `
@@ -29,40 +67,36 @@ const hlContent = [
     }
 ];
 
-let currentIndex = 0;
-let intervalId;
-
-const hlsection = document.getElementById('highlights');
-const heroContentContainer = document.getElementById('section-content');
-
-function updateHero() {
+const nationalContent = [
+    {
+        background: 'url("../content/photo/image00028.jpeg")',
+        content: `
+        
+           `
+    },
+    {
+        background: 'url("../content/photo/image00029.jpeg")',
+        content: `
+        
+           `
+    },
+    {
+        background: 'url("../content/photo/image00030.jpeg")',
+        content: `
+        
+           `
+    }
     
-    hlsection.style.backgroundImage = hlContent[currentIndex].background;
-    heroContentContainer.innerHTML = hlContent[currentIndex].content;
-}
+];
 
-function nextHero() {
-    currentIndex = (currentIndex + 1) % hlContent.length;
-    updateHero();
-}
-
-function prevHero() {
-    currentIndex = (currentIndex - 1 + hlContent.length) % hlContent.length;
-    updateHero();
-}
-
-function startAutoRotate() {
-    intervalId = setInterval(nextHero, 30000);
-}
-
-function stopAutoRotate() {
-    clearInterval(intervalId);
-}
-
-
-document.getElementById('next-button').addEventListener('click', nextHero);
-document.getElementById('prev-button').addEventListener('click', prevHero);
-
-
-startAutoRotate();
-updateHero();
+const brandsContent = [
+    {
+        background: 'url("../content/photo/image00001.jpeg")',
+        content: `
+            <p><text>PUMA</text> bumba com ela mesmo</p>
+           `
+    }
+]
+createSlider(highContent , 'highlights', 'prev-button1', 'next-button1');
+createSlider(nationalContent , 'national', 'prev-button2', 'next-button2');
+createSlider(brandsContent , 'brands', 'prev-button3', 'next-button3');

@@ -12,7 +12,25 @@
 
 html{
     font-size: 60.3%;
+    overflow: hidden;
+    scroll-behavior: smooth;
 }
+.main-container{
+    overflow: hidden;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    position: relative;
+    user-select: none;
+}
+.main-container::-webkit-scrollbar{
+    width: 0.3rem;
+}
+.main-container::-webkit-scrollbar-thumb{
+    background: var(--primary-color);
+    border-radius: 3rem;
+}
+
 
 header{
     background-color: var(--dark-color);
@@ -22,9 +40,10 @@ header{
     position: fixed;
     top: 0;
     z-index: 1000;
-
 }
-
+header.scrolled {
+    background-color: rgba(0, 0, 0, 0.116);
+}
 .text-logo{
     font-size: 2rem;
 }
@@ -43,6 +62,8 @@ header{
     background-repeat: no-repeat;
     height: 100vh;
     padding: 5rem 0;
+    scroll-snap-align: start;
+    scroll-snap-stop: normal; 
 }
 
 .hero-section .hero-content{
@@ -152,25 +173,85 @@ header{
     background-position: top;
     background-size: cover;
     transition: background 0.6s;
+    scroll-snap-align: start;
+    scroll-snap-stop: normal; 
 }
 .section-title{
     color: var(--primary-color);
     font-size: 5rem;
     font-weight: 700;
 }
-.section-content{
+.section-group{
     gap: 2rem;
     width: 40rem;
     font-weight: 700;
+    display: flex;
 }
-.section-content h2{
+#brands .section-group{
+    width: 100%;
+}
+.section-group h2{
     font-size: var(--mid-sz);
     line-height: 29.3px;
 }
-.section-content p{
+.section-group p{
     font-size: 500;
     font-size: 2rem;
 }
 text{
     color: var(--primary-color);
+}
+
+.partners-section{
+    background: linear-gradient(180deg, #000000d0 , #000000d0), url(/content/photo/image00015.jpeg);
+    background-position: center;
+}
+.partners-area{
+    width: 100%;
+    gap: 2rem;
+    height: 100%;
+    flex-wrap: wrap;
+}
+.partner-card img{
+    width: 10rem;
+}
+
+footer{
+    padding: 3rem 3rem 1rem 3rem;
+    background: var(--dark-color);
+    scroll-snap-align: start;
+    scroll-snap-stop: normal; 
+    gap: 2rem;
+}
+footer h2{
+    color: var(--primary-color);
+    font-size: 2rem;
+}
+.footer-content{
+    gap: 3rem;
+}
+footer nav a{
+    color: var(--white-color);
+    font-size: var(--small-sz);
+}
+.supa-animated {
+    font-family: "Montserrat", sans-serif;
+    animation: changeColor 6s linear infinite;
+    transition: all .1s ease-in-out;
+}
+
+@keyframes changeColor {
+
+    0%,
+    100% {
+        color: #2444FF;
+    }
+
+    33% {
+        color: #24C4FF;
+    }
+
+    66% {
+       color: #040053;
+    }
 }
