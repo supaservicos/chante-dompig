@@ -10,3 +10,20 @@ scrollContainer.addEventListener('scroll', function() {
         menu.classList.remove('scrolled');
     }
 });
+
+
+// 
+function togglePlayPause(video) {
+    const videos = document.querySelectorAll('video');
+    videos.forEach(v => {
+        if (v !== video) {
+            v.pause();
+        }
+    });
+
+    if (video.paused) {
+        video.play();
+    } else {
+        video.pause();
+    }
+}

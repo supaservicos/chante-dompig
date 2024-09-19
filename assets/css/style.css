@@ -255,3 +255,39 @@ footer nav a{
        color: #040053;
     }
 }
+
+
+.video-section{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    overflow-x: scroll;
+    width: 140vw;
+    height: 100%;
+}
+
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -webkit-touch-callout: none; 
+}
+
+video::-webkit-media-controls {
+    display: none !important;
+}
+
+video::-webkit-media-controls-enclosure {
+    display: none !important;
+    object-fit: cover;
+    -webkit-touch-callout: none; 
+}
+
+video::-webkit-media-controls {
+    display: none !important;
+}
+
+video::-webkit-media-controls-enclosure {
+    display: none !important;
+}
+

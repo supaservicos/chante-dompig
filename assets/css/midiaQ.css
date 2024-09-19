@@ -27,4 +27,11 @@
     .partner-card img{
        width: 5rem;
     }
+    .video-card{
+        overflow: hidden;
+        width: 35rem;
+        height: 50rem; 
+        border: 0.3rem solid var(--white-color);
+        border-radius: 1rem;
+    }
 }

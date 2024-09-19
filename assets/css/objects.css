@@ -62,3 +62,15 @@
     box-shadow: 0px 0px 3px var(--primary-color);
     transition: 0.3s;
 }
+
+.video-card{
+    overflow: hidden;
+    width: 28rem;
+    height: 45rem; 
+    border: 0.3rem solid var(--white-color);
+    border-radius: 1rem;
+}
+
+.video-desk{
+    z-index: 10;
+}
