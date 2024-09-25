@@ -65,8 +65,8 @@
 
 .video-card{
     overflow: hidden;
-    width: 28rem;
-    height: 45rem; 
+    width: 27rem;
+    height: 44rem; 
     border: 0.3rem solid var(--white-color);
     border-radius: 1rem;
     gap: 1rem;
