@@ -8,6 +8,7 @@
     font-style: normal;
     text-decoration: none;
     list-style: none;
+    transition: all .3s ease-in-out;
 }
 
 html{
@@ -129,7 +130,8 @@ header.scrolled {
 /* Score */
 .score-section{
     display: flex;
-    position: relative;
+    position: absolute;
+    top: 80%;
     left: 20%;
     gap: 2.4rem;
     width: 80rem;
@@ -217,18 +219,21 @@ text{
 }
 
 footer{
-    padding: 3rem 3rem 1rem 3rem;
+    padding: 3rem 3rem 2rem 3rem;
     background: var(--dark-color);
     scroll-snap-align: start;
     scroll-snap-stop: normal; 
     gap: 2rem;
+    justify-content: space-evenly;
 }
 footer h2{
     color: var(--primary-color);
     font-size: 2rem;
 }
 .footer-content{
+    padding: 0rem 0rem 4rem 0rem;
     gap: 3rem;
+    width: 100%;
 }
 footer nav a{
     color: var(--white-color);

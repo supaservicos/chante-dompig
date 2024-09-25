@@ -32,16 +32,16 @@
                 <nav class="navbar">
                     <ul class="nav-list flex">
                         <li class="nav-link">
-                            <a href="#" class="link">DOMPIG</a>
+                            <a href="#home" class="link">DOMPIG</a>
                         </li>
                         <li class="nav-link">
-                            <a href="#highlight" class="link">HIGHLIGHTS</a>
+                            <a href="#highlights" class="link">HIGHLIGHTS</a>
                         </li>
                         <li class="nav-link">
-                            <a href="#" class="link">BRANS</a>
+                            <a href="#brands" class="link">BRANS</a>
                         </li>
                         <li class="nav-link">
-                            <a href="#" class="link">PARTNERS</a>
+                            <a href="#partners" class="link">PARTNERS</a>
                         </li>
                     </ul>
                 </nav>
@@ -50,7 +50,7 @@
         </header>
         <!-- Main Content -->
         <main class="main-container">
-            <section class="hero-section">
+            <section id="home" class="hero-section">
                 <section class="hero-content flex row j-between">
                     <section class="info-content flex col">
                         <section class="mood">
@@ -108,184 +108,257 @@
                             </div>
                         </a>
                         <section class="navbtn-section flex row">
-                            <a class="btn-nav" href="#">
+                            <a class="btn-nav" href="#" onclick="changeColorMode(-1)">
                                 <img src="/content/icons/chevron-back.svg" alt="">
                             </a>
-                            <a class="btn-nav active" href="#">
+                            <a class="btn-nav" href="#" onclick="changeColorMode(1)">
                                 <img src="/content/icons/chevron-forward-outline.svg" alt="">
                             </a>
                         </section>
                     </section>
-                    <section class="highlight-contnt hide-mobile">
+                    <section class="highlight-contnt hide-mobile"></section>
+                    <section class="cords flex col cards-section">
                         <h1>HIGHLIGHTS</h1>
-                        <section class="cords flex col cards-section">
-                            <a class="highligth-card" href="">
-                                <img width="200rem" src="/content/photo/image00013.jpeg" alt="">
-                                <h2>
-                                    AC Milan W 4 - 0 Pomigliano W.
-                                    <h2>
-                                    </a>
-                                    <a class="highligth-card" href="">
-                                        <img width="200rem" src="/content/photo/image00008.jpeg" alt="">
-                                        <h2>
-                                            Monterrey W 4 - 0 AC Milan W.
-                                            <h2>
-                                            </a>
-                                        </section>
-                                    </section>
-                                </section>
-                                <!-- SCORE -->
-                                <section class="score-section j-between hide-mobile">
-                                    <section class="score-card">
-                                        <h2 class="score-title">Gools</h2>
-                                        <div class="score-count">
-                                            <h1>22</h1>
-                                        </div>
-                                    </section>
-                                    <section class="score-card">
-                                        <h2 class="score-title">Assists</h2>
-                                        <div class="score-count">
-                                            <h1>11</h1>
-                                        </div>
-                                    </section>
-                                    <section class="score-card">
-                                        <h2 class="score-title">Matches Played</h2>
-                                        <div class="score-count">
-                                            <h1>89</h1>
-                                        </div>
-                                    </section>
-                                    <section class="score-card">
-                                        <h2 class="score-title">Minutes Played</h2>
-                                        <div class="score-count">
-                                            <h1>1755</h1>
-                                        </div>
-                                    </section>
-                                </section>
-                            </section>
-                            <section class="highlights-section seccao flex col j-between" id="highlights">
-                                <h1 class="section-title">HIGHLIGHTS</h1>
-                                <section class="section-group  flex col">
-                                    <section class="section-content"></section>
-                                    <div class="navbtn-section flex row">
-                                        <a id="prev-button1" class="btn-nav">
-                                            <img src="/content/icons/chevron-back.svg" alt="">
-                                        </a>
-                                        <a id="next-button1" class="btn-nav">
-                                            <img src="/content/icons/chevron-forward-outline.svg" alt="">
-                                        </a>
-                                    </div>
-                                </section>
-                            </section>
-                            <section class="seccao flex col j-between" id="national">
-                                <h1 class="section-title">NATIONAL</h1>
-                                <section class="section-group flex col">
-                                    <section class="section-content"></section>
-                                    <div class="navbtn-section flex row">
-                                        <a id="prev-button2" class="btn-nav">
-                                            <img src="/content/icons/chevron-back.svg" alt="">
-                                        </a>
-                                        <a id="next-button2" class="btn-nav">
-                                            <img src="/content/icons/chevron-forward-outline.svg" alt="">
-                                        </a>
-                                    </div>
-                                </section>
-                            </section>
-
-                            <section class="seccao flex col j-between" id="more">
-                                <h1 class="section-title">MORE</h1>
-                                <section class="video-section ">
-                                    <section class="video-card">
-                                        <video width="100%" onclick="togglePlayPause(this)" controls>
-                                            <source src="/content/video/AC MILAN/WhatsApp Video 2024-07-14 at 02.23.47.mp4" type="video/mp4">
-                                        </video>
-                                    </section>
-                                </section>
-                            </section>
-
-                            <section class="seccao flex col j-between" id="brands">
-                                <h1 class="section-title">BRANDS</h1>
-                                <section class="section-group j-center">
-                                    <div class="navbtn-section flex row a-center">
-                                        <a id="prev-button3" class="btn-nav">
-                                            <img src="/content/icons/chevron-back.svg" alt="">
-                                        </a>
-                                        <section class="section-content"></section>
-                                        <a id="next-button3" class="btn-nav">
-                                            <img src="/content/icons/chevron-forward-outline.svg" alt="">
-                                        </a>
-                                    </div>
-                                </section>
-                            </section>
-                            <section class="partners-section seccao flex col">
-                                <h1 class="section-title">PARTNERS</h1>
-                                <section class="partners-area flex j-center a-center">
-                                    <a href="" class="partner-card">
-                                        <img src="/content/partners/puma.png" alt="">
-                                    </a>
-                                    <a href="" class="partner-card">
-                                        <img src="/content/partners/vw.png" alt="">
-                                    </a>
-                                    <a href="" class="partner-card">
-                                        <img src="/content/partners/offwhite.png" alt="">
-                                    </a>
-                                    <a href="" class="partner-card">
-                                        <img src="/content/partners/match.png" alt="">
-                                    </a>
-                                </section>
-                            </section>
-                        </main>
-                        <!-- Footer -->
-                        <footer class="flex col j-center">
-                            <section class="footer-content flex row j-center">
-                                <section>
-                                    <h2>Navigation</h2>
-                                    <nav class="flex col">
-                                        <a href="">Home</a>
-                                        <a href="">highlights</a>
-                                        <a href="">Brands</a>
-                                        <a href="">partners</a>
-                                    </nav>
-                                </section>
-                                <section>
-                                    <h2>Contacts</h2>
-                                    <p>+351 123 123 123</p>
-                                    <p>+44 898 898 898</p>
-                                    <p>managment@chante.uk</p>
-                                </section>
-                                <section>
-                                    <h2>Follow-me</h2>
-                                    <nav>
-                                        <a href=""></a>
-                                        <a href=""></a>
-                                        <a href=""></a>
-                                        <a href=""></a>
-                                    </nav>
-                                </section>
-                            </section>
-                            <section class="creditos">
-                                <section>
-                                    <p class="t-center">
-                                        © Chanté-Mary Dompig 2024 | Todos os direitos reservados | Developed by
-                                        <a href="" class="supas supa-animated">Supa Serviços</a>
-                                    </p>
-                                </section>
-                            </section>
-                        </footer>
+                        <a class="highligth-card" href="">
+                            <img width="200rem" src="/content/photo/image00013.jpeg" alt="">
+                            <h2>
+                                AC Milan W 4 - 0 Pomigliano W.
+                            </h2>
+                        </a>
+                        <a class="highligth-card" href="">
+                            <img width="200rem" src="/content/photo/image00008.jpeg" alt="">
+                            <h2>
+                                Monterrey W 4 - 0 AC Milan W.
+                            </h2>
+                        </a>
                     </section>
-                    <!-- Script -->
-                    <script src="/assets/js/index.js"></script>
-                    <script src="/assets/js/controls.js"></script>
-                    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const modeSelectors = document.querySelectorAll('input[name="color-mode"]');
+                    <!-- SCORE -->
+                    <section class="score-section j-between hide-mobile">
+                        <section class="score-card">
+                            <h2 class="score-title">Gools</h2>
+                            <div class="score-count">
+                                <h1 class="count" data-target="22">0</h1>
+                            </div>
+                        </section>
+                        <section class="score-card">
+                            <h2 class="score-title">Assists</h2>
+                            <div class="score-count">
+                                <h1 class="count" data-target="11">0</h1>
+                            </div>
+                        </section>
+                        <section class="score-card">
+                            <h2 class="score-title">Matches Played</h2>
+                            <div class="score-count">
+                                <h1 class="count" data-target="89">0</h1>
+                            </div>
+                        </section>
+                        <section class="score-card">
+                            <h2 class="score-title">Minutes Played</h2>
+                            <div class="score-count">
+                                <h1 class="count" data-target="1755">0</h1>
+                            </div>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <section class="highlights-section seccao flex col j-between" id="highlights">
+                <h1 class="section-title">HIGHLIGHTS</h1>
+                <section class="section-group  flex col">
+                    <section class="section-content"></section>
+                    <div class="navbtn-section flex row">
+                        <a id="prev-button1" class="btn-nav">
+                            <img src="/content/icons/chevron-back.svg" alt="">
+                        </a>
+                        <a id="next-button1" class="btn-nav">
+                            <img src="/content/icons/chevron-forward-outline.svg" alt="">
+                        </a>
+                    </div>
+                </section>
+            </section>
+            <section class="seccao flex col j-between" id="national">
+                <h1 class="section-title">NATIONAL</h1>
+                <section class="section-group flex col">
+                    <section class="section-content"></section>
+                    <div class="navbtn-section flex row">
+                        <a id="prev-button2" class="btn-nav">
+                            <img src="/content/icons/chevron-back.svg" alt="">
+                        </a>
+                        <a id="next-button2" class="btn-nav">
+                            <img src="/content/icons/chevron-forward-outline.svg" alt="">
+                        </a>
+                    </div>
+                </section>
+            </section>
+            <section class="seccao flex col j-between" id="more">
+                <h1 class="section-title">MORE</h1>
+                <section class="video-section">
+                    <section class="video-card">
+                        <video width="100%" onclick="moveToFirst(this)" controls>
+                            <source src="/content/video/AC MILAN NEW KIT 24&25/WhatsApp Video 2024-07-14 at 02.23.17.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-description">
+                            <h1>AC MILAN</h1>
+                            <h2>New Kit Presentation</h2>
+                        </div>
+                    </section>
+                    <section class="video-card">
+                        <video width="100%" onclick="moveToFirst(this)" controls>
+                            <source src="/content/video/AC MILAN NEW KIT 24&25/WhatsApp Video 2024-07-14 at 02.20.12.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-description">
+                            <h1>AC MILAN</h1>
+                            <h2>New Kit Presentation</h2>
+                        </div>
+                    </section>
+                    <section class="video-card">
+                        <video width="100%" onclick="moveToFirst(this)" controls>
+                            <source src="/content/video/AC MILAN NEW KIT 24&25/WhatsApp Video 2024-07-14 at 03.28.11.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-description">
+                            <h1>AC MILAN</h1>
+                            <h2>New Kit Presentation</h2>
+                        </div>
+                    </section>
+                    <section class="video-card">
+                        <video width="100%" onclick="moveToFirst(this)" controls>
+                            <source src="/content/video/MATCH/WhatsApp Video 2024-07-14 at 02.18.51.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-description">
+                            <h1>MATCH</h1>
+                            <h2>Celebration Moment</h2>
+                        </div>
+                    </section>
+                    <section class="video-card">
+                        <video width="100%" onclick="moveToFirst(this)" controls>
+                            <source src="/content/video/AC MILAN/WhatsApp Video 2024-07-14 at 03.40.07.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-description">
+                            <h1>AC MILAN</h1>
+                            <h2>Christmas Campaign</h2>
+                        </div>
+                    </section>
+                </section>
+            </section>
+            <section class="seccao flex col j-between" id="brands">
+                <h1 class="section-title">BRANDS</h1>
+                <section class="section-group j-center">
+                    <div class="navbtn-section flex row a-center">
+                        <a id="prev-button3" class="btn-nav">
+                            <img src="/content/icons/chevron-back.svg" alt="">
+                        </a>
+                        <section class="section-content"></section>
+                        <a id="next-button3" class="btn-nav">
+                            <img src="/content/icons/chevron-forward-outline.svg" alt="">
+                        </a>
+                    </div>
+                </section>
+            </section>
+            <section id="partners" class="partners-section seccao flex col">
+                <h1 class="section-title">PARTNERS</h1>
+                <section class="partners-area flex j-center a-center">
+                    <a href="" class="partner-card">
+                        <img src="/content/partners/puma.png" alt="">
+                    </a>
+                    <a href="" class="partner-card">
+                        <img src="/content/partners/vw.png" alt="">
+                    </a>
+                    <a href="" class="partner-card">
+                        <img src="/content/partners/offwhite.png" alt="">
+                    </a>
+                    <a href="" class="partner-card">
+                        <img src="/content/partners/match.png" alt="">
+                    </a>
+                </section>
+            </section>
+                    <!-- Footer -->
+        <footer class="flex col j-center">
+            <section class="footer-content flex row j-center">
+                <section>
+                    <h2>Navigation</h2>
+                    <nav class="flex col">
+                        <a href="">Home</a>
+                        <a href="">highlights</a>
+                        <a href="">Brands</a>
+                        <a href="">partners</a>
+                    </nav>
+                </section>
+                <section>
+                    <h2>Contacts</h2>
+                    <nav class="flex col">
+                        <a href="">+351 123 123 123</a>
+                    <a href="">+44 898 898 898</a>
+                    <a href="">managment@chante.uk</a>
+                    </nav>
+                </section>
+                <section>
+                    <h2>Follow-me</h2>
+                    <nav>
+                        <a href=""></a>
+                        <a href=""></a>
+                        <a href=""></a>
+                        <a href=""></a>
+                    </nav>
+                </section>
+            </section>
+            <section class="creditos">
+                <section>
+                    <p class="t-center">
+                        © Chanté-Mary Dompig 2024 | Todos os direitos reservados | Developed by
+                        <a href="" class="supas supa-animated">Supa Serviços</a>
+                    </p>
+                </section>
+            </section>
+        </footer>
+        </main>
 
-            modeSelectors.forEach(selector => {
-                selector.addEventListener('change', function () {
-                    document.body.className = ''; // Remove all classes
-                    document.body.classList.add(this.value); // Add the selected mode class
+
+        <!-- Script -->
+        <script src="/assets/js/index.js"></script>
+        <script src="/assets/js/controls.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+            const counters = document.querySelectorAll('.count');
+            const duration = 5000; // 5 seconds
+    
+            counters.forEach(counter => {
+                const updateCount = () => {
+                    const target = +counter.getAttribute('data-target');
+                    const count = +counter.innerText;
+                    const increment = target / (duration / 100);
+        
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count + increment);
+                        setTimeout(updateCount, 100);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+            
+                    updateCount();
                 });
             });
-        });
-                    </script>
-                </body>
-            </html>
+        </script>
+        <script>
+            document.querySelectorAll('video').forEach(video => {
+                video.addEventListener('play', function() {
+                    document.querySelectorAll('video').forEach(v => {
+                        if (v !== video) {
+                            v.pause();
+                        }
+                    });
+                });
+            });
+
+            document.addEventListener('DOMContentLoaded', function () {
+                const modeSelectors = document.querySelectorAll('input[name="color-mode"]');
+
+                    modeSelectors.forEach(selector => {
+                        selector.addEventListener('change', function () {
+                            document.body.className = ''; // Remove all classes
+                            document.body.classList.add(this.value); // Add the selected mode class
+                        });
+                    });
+                });
+        </script>
+    </body>
+</html>

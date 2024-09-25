@@ -69,8 +69,9 @@
     height: 45rem; 
     border: 0.3rem solid var(--white-color);
     border-radius: 1rem;
+    gap: 1rem;
 }
 
-.video-desk{
-    z-index: 10;
+.video-description{
+    position: absolute;
 }
