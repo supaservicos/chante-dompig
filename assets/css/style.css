@@ -47,6 +47,7 @@ header.scrolled {
 }
 .text-logo{
     font-size: 2rem;
+    color: var(--text-white);
 }
 
 .nav-list{
