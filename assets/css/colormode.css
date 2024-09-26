@@ -37,17 +37,19 @@
 
 /* Default mode (index) */
 body.mode-1 .hero-section {
-    background-image: url('/content/hero-bg/hbg-1.png');
+    background-image: url('../../content/hero-bg/hbg-1.png');
 }
 
 /* Mode 2 */
 body.mode-2 .hero-section {
-    background-image: url('/content/photo/image00038.jpeg');
+    /* background-image: url('/content/photo/image00038.jpeg'); */
+    background-image: url('../../content/photo/image00038.jpeg');
 }
 
 /* Mode 3 */
 body.mode-3 .hero-section {
-    background-image: url('/content/photo/image00030.jpeg');
+    /* background-image: url('/content/photo/image00030.jpeg'); */
+    background-image: url('../../content/photo/image00030.jpeg');
 }
 
 /* Example of primary color changes */

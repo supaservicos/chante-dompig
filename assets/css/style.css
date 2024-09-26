@@ -59,7 +59,7 @@ header.scrolled {
 
 /* Hero-Section */
 .hero-section{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./content/hero-bg/hbg-1.png);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../content/hero-bg/hbg-1.png');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
