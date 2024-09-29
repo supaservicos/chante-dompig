@@ -240,6 +240,15 @@
                             <h2>Christmas Campaign</h2>
                         </div>
                     </section>
+                    <section class="video-card">
+                        <video width="100%" onclick="moveToFirst(this)" controls>
+                            <source src="./content/video/AC MILAN/WhatsApp Video 2024-07-14 at 03.40.07.mp4" type="video/mp4">
+                        </video>
+                        <div class="video-description">
+                            <h1>AC MILAN</h1>
+                            <h2>Christmas Campaign</h2>
+                        </div>
+                    </section>
                 </section>
             </section>
             <!-- Brands -->
@@ -318,6 +327,29 @@
         <!-- Script -->
         <script src="./assets/js/index.js"></script>
         <script src="./assets/js/controls.js"></script>
+        <script>
+            const videoSection = document.querySelector('.video-section');
+            const firstVideo = videoSection.querySelector('.video-card:first-child');
+        
+            videoSection.addEventListener('scroll', () => {
+                if (videoSection.scrollLeft === 0) {
+                    firstVideo.classList.add('highlight');
+                } else {
+                    firstVideo.classList.remove('highlight');
+                }
+            });
+        
+            document.querySelectorAll('.video-card video').forEach(video => {
+                video.addEventListener('play', () => {
+                    const videoCard = video.closest('.video-card');
+                    const videoCardLeft = videoCard.offsetLeft;
+                    videoSection.scrollTo({
+                        left: videoCardLeft,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        </script>
         <script>
             document.addEventListener('DOMContentLoaded', function () {
             const counters = document.querySelectorAll('.count');

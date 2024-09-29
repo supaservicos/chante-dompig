@@ -263,37 +263,36 @@ footer nav a{
 }
 
 
-.video-section{
+.video-section {
+    overflow-x: auto;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     gap: 2rem;
-    overflow-x: scroll;
-    width: 140vw;
-    height: 100%;
+    scroll-snap-type: x mandatory;
 }
 
-video{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    -webkit-touch-callout: none; 
+/* @keyframes highlight {
+    0% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+    50% {
+        transform: scale(1.1);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+} */
+
+.highlight {
+    animation: highlight 1s ease-in-out;
 }
 
-video::-webkit-media-controls {
-    display: none !important;
+.video-section {
+    overflow-x: auto;
+    display: flex;
+    gap: 2rem;
+    scroll-snap-type: x mandatory;
 }
-
-video::-webkit-media-controls-enclosure {
-    display: none !important;
-    object-fit: cover;
-    -webkit-touch-callout: none; 
-}
-
-video::-webkit-media-controls {
-    display: none !important;
-}
-
-video::-webkit-media-controls-enclosure {
-    display: none !important;
-}
-

@@ -63,15 +63,22 @@
     transition: 0.3s;
 }
 
-.video-card{
-    overflow: hidden;
-    width: 27rem;
-    height: 44rem; 
-    border: 0.3rem solid var(--white-color);
+
+
+.video-card {
+    flex: 0 0 auto;
+    /* width: 250px; */
     border-radius: 1rem;
     gap: 1rem;
+    scroll-snap-align: start;
+}
+
+.video-card video{
+    border: 0.3rem solid var(--white-color);
+    border-radius: 1rem;
+    height: 40rem;
 }
 
 .video-description{
-    position: absolute;
+
 }
