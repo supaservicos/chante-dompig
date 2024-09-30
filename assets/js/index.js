@@ -1,5 +1,5 @@
 const menu = document.getElementById('menu');
-const hero = document.getElementById('hero');
+const hero = document.getElementById('home');
 const scrollContainer = document.getElementById('main');
 
 scrollContainer.addEventListener('scroll', function() {
