@@ -3,12 +3,10 @@ const hero = document.getElementById('hero');
 const scrollContainer = document.getElementById('main');
 
 scrollContainer.addEventListener('scroll', function() {
-    
     if (scrollContainer.scrollTop > hero.offsetHeight - menu.offsetHeight) {
         menu.classList.add('scrolled');
     } else {
         menu.classList.remove('scrolled');
     }
 });
-
 

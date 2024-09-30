@@ -28,7 +28,7 @@
             <a href="" class="logo">
                 <h1 class="text-logo">CHANTÉ DOMPIG</h1>
             </a>
-            <section class="navgation">
+            <section class="navigation hide-mobile">
                 <nav class="navbar">
                     <ul class="nav-list flex">
                         <li class="nav-link">
@@ -38,7 +38,7 @@
                             <a href="#highlights" class="link">HIGHLIGHTS</a>
                         </li>
                         <li class="nav-link">
-                            <a href="#brands" class="link">BRANS</a>
+                            <a href="#brands" class="link">BRANDS</a>
                         </li>
                         <li class="nav-link">
                             <a href="#partners" class="link">PARTNERS</a>
@@ -46,7 +46,28 @@
                     </ul>
                 </nav>
             </section>
-            <section class="mobile-menu hide-desktop"></section>
+            <section class="mobile-menu hide-desktop">
+                <button class="menu-toggle" aria-label="Open Menu">
+                    <img src="./content/icons/menu.svg" class="menu-icon" alt="">
+                </button>
+                <nav class="mobile-navbar hide">
+                    <ul class="mobile-nav-list">
+                        <li class="mobile-nav-link">
+                            <a href="#home" class="link">DOMPIG</a>
+                        </li>
+                        <li class="mobile-nav-link">
+                            <a href="#highlights" class="link">HIGHLIGHTS</a>
+                        </li>
+                        <li class="mobile-nav-link">
+                            <a href="#brands" class="link">BRANDS</a>
+                        </li>
+                        <li class="mobile-nav-link">
+                            <a href="#partners" class="link">PARTNERS</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+
         </header>
         <!-- Main Content -->
         <main class="main-container">
@@ -107,7 +128,7 @@
                                 <ion-icon class="icon" name="arrow-round-forward"></ion-icon>
                             </div>
                         </a>
-                        <section class="navbtn-section flex row">
+                        <section class="navbtn-section flex row hide-mobile">
                             <a class="btn-nav" href="#" onclick="changeColorMode(-1)">
                                 <img src="./content/icons/chevron-back.svg" alt="">
                             </a>
@@ -119,18 +140,20 @@
                     <section class="highlight-contnt hide-mobile"></section>
                     <section class="cords flex col cards-section">
                         <h1>HIGHLIGHTS</h1>
-                        <a class="highligth-card" href="">
-                            <img width="200rem" src="./content/photo/image00013.jpeg" alt="">
-                            <h2>
-                                AC Milan W 4 - 0 Pomigliano W.
-                            </h2>
-                        </a>
-                        <a class="highligth-card" href="">
-                            <img width="200rem" src="./content/photo/image00008.jpeg" alt="">
-                            <h2>
-                                Monterrey W 4 - 0 AC Milan W.
-                            </h2>
-                        </a>
+                        <section class="flex col highlight-card">
+                            <a class="highligth-card" href="">
+                                <img width="200rem" src="./content/photo/image00013.jpeg" alt="">
+                                <h2>
+                                    AC Milan W 4 - 0 Pomigliano W.
+                                </h2>
+                            </a>
+                            <a class="highligth-card" href="">
+                                <img width="200rem" src="./content/photo/image00008.jpeg" alt="">
+                                <h2>
+                                    Monterrey W 4 - 0 AC Milan W.
+                                </h2>
+                            </a>
+                        </section>
                     </section>
                     <!-- SCORE -->
                     <section class="score-section j-between hide-mobile">
@@ -327,6 +350,22 @@
         <!-- Script -->
         <script src="./assets/js/index.js"></script>
         <script src="./assets/js/controls.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const menuToggle = document.querySelector('.menu-toggle');
+                const mobileNavbar = document.querySelector('.mobile-navbar');
+
+                menuToggle.addEventListener('click', function() {
+                    mobileNavbar.classList.toggle('hide');
+                });
+
+                document.addEventListener('click', function(event) {
+                    if (!mobileNavbar.contains(event.target) && !menuToggle.contains(event.target)) {
+                        mobileNavbar.classList.add('hide');
+                    }
+                });
+            });
+        </script>
         <script>
             const videoSection = document.querySelector('.video-section');
             const firstVideo = videoSection.querySelector('.video-card:first-child');
