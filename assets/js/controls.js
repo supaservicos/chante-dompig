@@ -93,19 +93,19 @@ const brandsContent = [
     {
         background: 'linear-gradient(180deg, #ffffff00 0%, #6f717106 63%, #22242453 79%), url("../content/photo/image00001.jpeg")',
         content: `
-            <p><text>PUMA</text>  VOLKSWAGEN  OFF-WHITE  MATCHDAY</p>
+            <p><text>PUMA</text>  OFF-WHITE  MATCHDAY</p>
            `
     },
-    {
-        background: 'url("../content/photo/Volkswagen/WhatsApp Image 2024-07-14 at 03.03.21 (3).jpeg")',
-        content: `
-            <p>PUMA  <text>VOLKSWAGEN</text>  OFF-WHITE  MATCHDAY</p>
-           `
-    },
+    // {
+    //     background: 'url("../content/photo/Volkswagen/WhatsApp Image 2024-07-14 at 03.03.21 (3).jpeg")',
+    //     content: `
+    //         <p>PUMA    OFF-WHITE  MATCHDAY</p>
+    //        `
+    // },
     {
         background: 'url("../content/photo/OFF WHITE/WhatsApp Image 2024-07-14 at 03.03.20 (3).jpeg")',
         content: `
-            <p>PUMA  VOLKSWAGEN  <text>OFF-WHITE</text>  MATCHDAY</p>
+            <p>PUMA  <text>OFF-WHITE</text>  MATCHDAY</p>
            `
     }
 ]
