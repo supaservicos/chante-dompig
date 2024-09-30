@@ -67,7 +67,6 @@
 
 .video-card {
     flex: 0 0 auto;
-    /* width: 250px; */
     border-radius: 1rem;
     gap: 1rem;
     scroll-snap-align: start;
