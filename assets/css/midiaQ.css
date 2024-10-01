@@ -84,8 +84,8 @@
         color: var(--primary-color);
     }
 
-    .mode-img{
-        width: 2rem;
+    .mood div label .mode-img{
+        width: 3rem;
     }
     
 }

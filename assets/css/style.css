@@ -173,6 +173,10 @@ header.scrolled {
     gap: 1rem;
 }
 
+.highligth-card img{
+    width: 20rem;
+} 
+
 /* Score */
 .score-section{
     display: flex;
