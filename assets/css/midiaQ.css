@@ -48,6 +48,12 @@
         display: flex;
         flex-direction: column;
     }
+    .hero-section-about{
+        padding: 10rem 4rem;
+    }
+    .about-info{
+        width: 100%;
+    }
 
     .hero-content .info-content {
         display: flex;
