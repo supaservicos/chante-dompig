@@ -90,6 +90,13 @@ header.scrolled {
     scroll-snap-align: start;
     scroll-snap-stop: normal; 
 }
+.hero-section-about{
+    background: var(--black-color);
+    height: 100vh;
+    padding: 5rem 0;
+    scroll-snap-align: start;
+    scroll-snap-stop: normal; 
+}
 
 .hero-section .hero-content{
     width: 100%;
@@ -129,6 +136,14 @@ header.scrolled {
 
 .name-chate h1:nth-child(2){
     font-size: 8rem;;
+    color: var(--primary-color);
+}
+.name-chate-about h1{
+    font-size: 4rem;
+    line-height: 1;
+}
+.name-chate-about h1:nth-child(2){
+    font-size: 4rem;;
     color: var(--primary-color);
 }
 

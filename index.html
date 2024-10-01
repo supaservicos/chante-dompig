@@ -1,110 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content=" ">
-        <title>Chanté Domoig</title>
-        <!-- Font -->
-        <!-- Icons -->
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-            integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        >
-        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-        <!-- Style -->
-        <link rel="stylesheet" href="./assets/css/style.css">
-        <link rel="stylesheet" href="./assets/css/objects.css">
-        <link rel="stylesheet" href="./assets/css/root.css">
-        <link rel="stylesheet" href="./assets/css/colormode.css">
-        <link rel="stylesheet" href="./assets/css/midiaQ.css">
-    </head>
-    <body>
-        <!-- Header -->
-        <header class="flex a-center j-between normal-font small-sz">
-            <a href="" class="logo">
-                <h1 class="text-logo">CHANTÉ DOMPIG</h1>
-            </a>
-            <section class="navigation hide-mobile">
-                <nav class="navbar">
-                    <ul class="nav-list flex">
-                        <li class="nav-link">
-                            <a href="#home" class="link">DOMPIG</a>
-                        </li>
-                        <li class="nav-link">
-                            <a href="#highlights" class="link">HIGHLIGHTS</a>
-                        </li>
-                        <li class="nav-link">
-                            <a href="#brands" class="link">BRANDS</a>
-                        </li>
-                        <li class="nav-link">
-                            <a href="#partners" class="link">PARTNERS</a>
-                        </li>
-                    </ul>
-                </nav>
-            </section>
-            <section class="mobile-menu hide-desktop">
-                <a class="menu-toggle" aria-label="Open Menu">
-                    <ion-icon class="menu-icon" name="menu"></ion-icon>
-                </a>
-                <nav class="mobile-navbar hide">
-                    <ul class="mobile-nav-list">
-                        <li class="mobile-nav-link">
-                            <a href="#home" class="link">DOMPIG</a>
-                        </li>
-                        <li class="mobile-nav-link">
-                            <a href="#highlights" class="link">HIGHLIGHTS</a>
-                        </li>
-                        <li class="mobile-nav-link">
-                            <a href="#brands" class="link">BRANDS</a>
-                        </li>
-                        <li class="mobile-nav-link">
-                            <a href="#partners" class="link">PARTNERS</a>
-                        </li>
-                    </ul>
-                </nav>
-            </section>
 
-        </header>
-        <!-- Main Content -->
-        <main class="main-container">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" ">
+    <title>Chanté Domoig</title>
+    <!-- Font -->
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <!-- Style -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/objects.css">
+    <link rel="stylesheet" href="./assets/css/root.css">
+    <link rel="stylesheet" href="./assets/css/colormode.css">
+    <link rel="stylesheet" href="./assets/css/midiaQ.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="flex a-center j-between normal-font small-sz" id="menu">
+        <a href="" class="logo">
+            <h1 class="text-logo">CHANTÉ DOMPIG</h1>
+        </a>
+        <section class="navigation hide-mobile">
+            <nav class="navbar">
+                <ul class="nav-list flex">
+                    <li class="nav-link">
+                        <a href="#home" class="link">DOMPIG</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#highlights" class="link">HIGHLIGHTS</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#brands" class="link">BRANDS</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#partners" class="link">PARTNERS</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        <section class="mobile-menu hide-desktop">
+            <a class="menu-toggle" aria-label="Open Menu">
+                <ion-icon class="menu-icon" name="menu"></ion-icon>
+            </a>
+            <nav class="mobile-navbar hide">
+                <ul class="mobile-nav-list">
+                    <li class="mobile-nav-link">
+                        <a href="#home" class="link">DOMPIG</a>
+                    </li>
+                    <li class="mobile-nav-link">
+                        <a href="#highlights" class="link">HIGHLIGHTS</a>
+                    </li>
+                    <li class="mobile-nav-link">
+                        <a href="#brands" class="link">BRANDS</a>
+                    </li>
+                    <li class="mobile-nav-link">
+                        <a href="#partners" class="link">PARTNERS</a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
+    </header>
+    <!-- Main Content -->
+    <section class="main-container" id="main">
+        <main>
             <section id="home" class="hero-section">
                 <section class="hero-content flex row j-between">
                     <section class="info-content flex col">
                         <section class="mood">
                             <div>
-                                <input
-                                    type="radio"
-                                    name="color-mode"
-                                    id="mode-1"
-                                    value="mode-1"
-                                    checked
-                                >
+                                <input type="radio" name="color-mode" id="mode-1" value="mode-1" checked>
                                 <label for="mode-1">
                                     <img class="mode-img" src="./content/team-1.svg" alt="Modo 1">
                                 </label>
                             </div>
                             <div>
-                                <input
-                                    type="radio"
-                                    name="color-mode"
-                                    id="mode-2"
-                                    value="mode-2"
-                                >
+                                <input type="radio" name="color-mode" id="mode-2" value="mode-2">
                                 <label for="mode-2">
                                     <img class="mode-img" src="./content/team-2.svg" alt="Modo 2">
                                 </label>
                             </div>
                             <div>
-                                <input
-                                    type="radio"
-                                    name="color-mode"
-                                    id="mode-3"
-                                    value="mode-3"
-                                >
+                                <input type="radio" name="color-mode" id="mode-3" value="mode-3">
                                 <label for="mode-3">
                                     <img class="mode-img" src="./content/team-3.svg" alt="Modo 3">
                                 </label>
@@ -122,7 +103,7 @@
                                 2025...
                             </p>
                         </section>
-                        <a href="" class="flex a-center link">
+                        <a href="./about.html" class="flex a-center link">
                             <p>READ MORE</p>
                             <div>
                                 <ion-icon class="icon" name="arrow-round-forward"></ion-icon>
@@ -220,7 +201,9 @@
                 <section class="video-section">
                     <section class="video-card">
                         <video width="100%" onclick="moveToFirst(this)" controls>
-                            <source src="./content/video/AC MILAN NEW KIT 24&25/WhatsApp Video 2024-07-14 at 02.23.17.mp4" type="video/mp4">
+                            <source
+                                src="./content/video/AC MILAN NEW KIT 24&25/WhatsApp Video 2024-07-14 at 02.23.17.mp4"
+                                type="video/mp4">
                         </video>
                         <div class="video-description">
                             <h1>AC MILAN</h1>
@@ -229,7 +212,9 @@
                     </section>
                     <section class="video-card">
                         <video width="100%" onclick="moveToFirst(this)" controls>
-                            <source src="./content/video/AC MILAN NEW KIT 24&25/WhatsApp Video 2024-07-14 at 02.20.12.mp4" type="video/mp4">
+                            <source
+                                src="./content/video/AC MILAN NEW KIT 24&25/WhatsApp Video 2024-07-14 at 02.20.12.mp4"
+                                type="video/mp4">
                         </video>
                         <div class="video-description">
                             <h1>AC MILAN</h1>
@@ -238,7 +223,9 @@
                     </section>
                     <section class="video-card">
                         <video width="100%" onclick="moveToFirst(this)" controls>
-                            <source src="./content/video/AC MILAN NEW KIT 24&25/WhatsApp Video 2024-07-14 at 03.28.11.mp4" type="video/mp4">
+                            <source
+                                src="./content/video/AC MILAN NEW KIT 24&25/WhatsApp Video 2024-07-14 at 03.28.11.mp4"
+                                type="video/mp4">
                         </video>
                         <div class="video-description">
                             <h1>AC MILAN</h1>
@@ -247,7 +234,8 @@
                     </section>
                     <section class="video-card">
                         <video width="100%" onclick="moveToFirst(this)" controls>
-                            <source src="./content/video/MATCH/WhatsApp Video 2024-07-14 at 02.18.51.mp4" type="video/mp4">
+                            <source src="./content/video/MATCH/WhatsApp Video 2024-07-14 at 02.18.51.mp4"
+                                type="video/mp4">
                         </video>
                         <div class="video-description">
                             <h1>MATCH</h1>
@@ -256,7 +244,8 @@
                     </section>
                     <section class="video-card">
                         <video width="100%" onclick="moveToFirst(this)" controls>
-                            <source src="./content/video/AC MILAN/WhatsApp Video 2024-07-14 at 03.40.07.mp4" type="video/mp4">
+                            <source src="./content/video/AC MILAN/WhatsApp Video 2024-07-14 at 03.40.07.mp4"
+                                type="video/mp4">
                         </video>
                         <div class="video-description">
                             <h1>AC MILAN</h1>
@@ -265,7 +254,8 @@
                     </section>
                     <section class="video-card">
                         <video width="100%" onclick="moveToFirst(this)" controls>
-                            <source src="./content/video/AC MILAN/WhatsApp Video 2024-07-14 at 03.40.07.mp4" type="video/mp4">
+                            <source src="./content/video/AC MILAN/WhatsApp Video 2024-07-14 at 03.40.07.mp4"
+                                type="video/mp4">
                         </video>
                         <div class="video-description">
                             <h1>AC MILAN</h1>
@@ -308,98 +298,99 @@
                 </section>
             </section>
             <!-- Footer -->
-            <footer class="flex col j-center">
-                <section class="footer-content flex row j-center">
-                    <section>
-                        <h2>Navigation</h2>
-                        <nav class="flex col">
-                            <a href="">Home</a>
-                            <a href="">highlights</a>
-                            <a href="">Brands</a>
-                            <a href="">partners</a>
-                        </nav>
-                    </section>
-                    <section>
-                        <h2>Contacts</h2>
-                        <nav class="flex col">
-                            <a href="">+351 123 123 123</a>
-                            <a href="">+44 898 898 898</a>
-                            <a href="">managment@chante.uk</a>
-                        </nav>
-                    </section>
-                    <section>
-                        <h2>Follow-me</h2>
-                        <nav>
-                            <a href=""></a>
-                            <a href=""></a>
-                            <a href=""></a>
-                            <a href=""></a>
-                        </nav>
-                    </section>
-                </section>
-                <section class="creditos">
-                    <section>
-                        <p class="t-center">
-                            © Chanté-Mary Dompig 2024 | Todos os direitos reservados | Developed by
-                            <a href="" class="supas supa-animated">Supa Serviços</a>
-                        </p>
-                    </section>
-                </section>
-            </footer>
         </main>
-        <!-- Script -->
-        <script src="./assets/js/index.js"></script>
-        <script src="./assets/js/controls.js"></script>
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
-                const menuToggle = document.querySelector('.menu-toggle');
-                const mobileNavbar = document.querySelector('.mobile-navbar');
+        <footer class="flex col j-center">
+            <section class="footer-content flex row j-center">
+                <section>
+                    <h2>Navigation</h2>
+                    <nav class="flex col">
+                        <a href="">Home</a>
+                        <a href="">highlights</a>
+                        <a href="">Brands</a>
+                        <a href="">partners</a>
+                    </nav>
+                </section>
+                <section>
+                    <h2>Contacts</h2>
+                    <nav class="flex col">
+                        <a href="">+351 123 123 123</a>
+                        <a href="">+44 898 898 898</a>
+                        <a href="">managment@chante.uk</a>
+                    </nav>
+                </section>
+                <section>
+                    <h2>Follow-me</h2>
+                    <nav>
+                        <a href=""></a>
+                        <a href=""></a>
+                        <a href=""></a>
+                        <a href=""></a>
+                    </nav>
+                </section>
+            </section>
+            <section class="creditos">
+                <section>
+                    <p class="t-center">
+                        © Chanté-Mary Dompig 2024 | Todos os direitos reservados | Developed by
+                        <a href="" class="supas supa-animated">Supa Serviços</a>
+                    </p>
+                </section>
+            </section>
+        </footer>
+    </section>
+    <!-- Script -->
+    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/controls.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const mobileNavbar = document.querySelector('.mobile-navbar');
 
-                menuToggle.addEventListener('click', function() {
-                    mobileNavbar.classList.toggle('hide');
-                });
-
-                document.addEventListener('click', function(event) {
-                    if (!mobileNavbar.contains(event.target) && !menuToggle.contains(event.target)) {
-                        mobileNavbar.classList.add('hide');
-                    }
-                });
+            menuToggle.addEventListener('click', function () {
+                mobileNavbar.classList.toggle('hide');
             });
-        </script>
-        <script>
-            const videoSection = document.querySelector('.video-section');
-            const firstVideo = videoSection.querySelector('.video-card:first-child');
-        
-            videoSection.addEventListener('scroll', () => {
-                if (videoSection.scrollLeft === 0) {
-                    firstVideo.classList.add('highlight');
-                } else {
-                    firstVideo.classList.remove('highlight');
+
+            document.addEventListener('click', function (event) {
+                if (!mobileNavbar.contains(event.target) && !menuToggle.contains(event.target)) {
+                    mobileNavbar.classList.add('hide');
                 }
             });
-        
-            document.querySelectorAll('.video-card video').forEach(video => {
-                video.addEventListener('play', () => {
-                    const videoCard = video.closest('.video-card');
-                    const videoCardLeft = videoCard.offsetLeft;
-                    videoSection.scrollTo({
-                        left: videoCardLeft,
-                        behavior: 'smooth'
-                    });
+        });
+    </script>
+    <script>
+        const videoSection = document.querySelector('.video-section');
+        const firstVideo = videoSection.querySelector('.video-card:first-child');
+
+        videoSection.addEventListener('scroll', () => {
+            if (videoSection.scrollLeft === 0) {
+                firstVideo.classList.add('highlight');
+            } else {
+                firstVideo.classList.remove('highlight');
+            }
+        });
+
+        document.querySelectorAll('.video-card video').forEach(video => {
+            video.addEventListener('play', () => {
+                const videoCard = video.closest('.video-card');
+                const videoCardLeft = videoCard.offsetLeft;
+                videoSection.scrollTo({
+                    left: videoCardLeft,
+                    behavior: 'smooth'
                 });
             });
-        </script>
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
             const counters = document.querySelectorAll('.count');
             const duration = 5000; // 5 seconds
-    
+
             counters.forEach(counter => {
                 const updateCount = () => {
                     const target = +counter.getAttribute('data-target');
                     const count = +counter.innerText;
                     const increment = target / (duration / 100);
-        
+
                     if (count < target) {
                         counter.innerText = Math.ceil(count + increment);
                         setTimeout(updateCount, 100);
@@ -407,32 +398,33 @@
                         counter.innerText = target;
                     }
                 };
-            
-                    updateCount();
+
+                updateCount();
+            });
+        });
+    </script>
+    <script>
+        document.querySelectorAll('video').forEach(video => {
+            video.addEventListener('play', function () {
+                document.querySelectorAll('video').forEach(v => {
+                    if (v !== video) {
+                        v.pause();
+                    }
                 });
             });
-        </script>
-        <script>
-            document.querySelectorAll('video').forEach(video => {
-                video.addEventListener('play', function() {
-                    document.querySelectorAll('video').forEach(v => {
-                        if (v !== video) {
-                            v.pause();
-                        }
-                    });
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const modeSelectors = document.querySelectorAll('input[name="color-mode"]');
+
+            modeSelectors.forEach(selector => {
+                selector.addEventListener('change', function () {
+                    document.body.className = ''; // Remove all classes
+                    document.body.classList.add(this.value); // Add the selected mode class
                 });
             });
+        });
+    </script>
+</body>
 
-            document.addEventListener('DOMContentLoaded', function () {
-                const modeSelectors = document.querySelectorAll('input[name="color-mode"]');
-
-                    modeSelectors.forEach(selector => {
-                        selector.addEventListener('change', function () {
-                            document.body.className = ''; // Remove all classes
-                            document.body.classList.add(this.value); // Add the selected mode class
-                        });
-                    });
-                });
-        </script>
-    </body>
 </html>
