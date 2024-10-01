@@ -10,3 +10,14 @@ scrollContainer.addEventListener('scroll', function() {
     }
 });
 
+// Ajuste na viewport
+function setVh() {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
+
+// Execute na carga da página
+setVh();
+
+// Atualize ao redimensionar a janela
+window.addEventListener('resize', setVh);
