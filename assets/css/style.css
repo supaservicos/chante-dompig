@@ -92,8 +92,7 @@ header.scrolled {
 }
 .hero-section-about{
     background: var(--black-color);
-    height: 100vh;
-    padding: 5rem 0;
+    padding: 10rem;
     scroll-snap-align: start;
     scroll-snap-stop: normal; 
 }
@@ -336,3 +335,9 @@ footer nav a{
     animation: highlight 1s ease-in-out;
 }
 
+.about-info{
+    width: 59rem;
+}
+.about-info p{
+    font-size: 2rem;
+}
