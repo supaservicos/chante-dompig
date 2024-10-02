@@ -377,11 +377,11 @@
                         </section>
                         <section class="video-card">
                             <video width="100%" autoplay loop onclick="moveToFirst(this)" controls>
-                                <source src="./content/video/AC MILAN/WhatsApp Video 2024-07-14 at 03.40.07.mp4" type="video/mp4">
+                                <source src="./content/video/AC MILAN/WhatsApp Video 2024-07-14 at 03.27.09.mp4" type="video/mp4">
                             </video>
                             <div class="video-description">
                                 <h1>AC MILAN</h1>
-                                <h2>Christmas Campaign</h2>
+                                <h2>Chante</h2>
                             </div>
                         </section>
                     </section>
@@ -510,15 +510,6 @@
         });
         </script>
         <script>
-            document.querySelectorAll('video').forEach(video => {
-                video.addEventListener('play', function () {
-                    document.querySelectorAll('video').forEach(v => {
-                        if (v !== video) {
-                            v.pause();
-                        }
-                    });
-                });
-            });
         
             document.addEventListener('DOMContentLoaded', function () {
                 const modeSelectors = document.querySelectorAll('input[name="color-mode"]');
@@ -531,17 +522,17 @@
                 });
             });
         
-            const videoSection = document.querySelector('.video-section');
-            document.querySelectorAll('.video-card video').forEach(video => {
-                video.addEventListener('play', () => {
-                    const videoCard = video.closest('.video-card');
-                    const videoCardLeft = videoCard.offsetLeft;
-                    videoSection.scrollTo({
-                        left: videoCardLeft,
-                        behavior: 'smooth'
-                    });
-                });
-            });
+            // const videoSection = document.querySelector('.video-section');
+            // document.querySelectorAll('.video-card video').forEach(video => {
+            //     video.addEventListener('play', () => {
+            //         const videoCard = video.closest('.video-card');
+            //         const videoCardLeft = videoCard.offsetLeft;
+            //         videoSection.scrollTo({
+            //             left: videoCardLeft,
+            //             behavior: 'smooth'
+            //         });
+            //     });
+            // });
         </script>
         <script>
         document.addEventListener('DOMContentLoaded', function () {
