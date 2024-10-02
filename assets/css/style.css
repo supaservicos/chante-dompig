@@ -44,7 +44,7 @@ header{
     z-index: 1000;
 }
 header.scrolled {
-    /* background-color: rgba(0, 0, 0, 0.116); */
+    background: linear-gradient(180deg, #0000006c 0%, #22242400 100%);
 }
 .text-logo{
     font-size: 2rem;

@@ -1,14 +1,20 @@
 const menu = document.getElementById('menu');
 const hero = document.getElementById('home');
 const scrollContainer = document.getElementById('main');
+const aboutVar = document.getElementById('about');
 
 scrollContainer.addEventListener('scroll', function() {
-    if (scrollContainer.scrollTop > hero.offsetHeight - menu.offsetHeight) {
+    if ((scrollContainer.scrollTop > hero.offsetHeight - menu.offsetHeight)||(scrollContainer.scrollTop > about.offsetHeight - menu.offsetHeight)) {
         menu.classList.add('scrolled');
     } else {
         menu.classList.remove('scrolled');
     }
 });
+
+function about(){
+    hero.classList.toggle("off");
+    aboutVar.classList.toggle("off");
+}
 
 // Ajuste na viewport
 function setVh() {
