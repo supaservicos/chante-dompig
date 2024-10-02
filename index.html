@@ -331,7 +331,7 @@
                     <h1 class="section-title">MORE</h1>
                     <section class="video-section">
                         <section class="video-card">
-                            <video width="100%" onclick="moveToFirst(this)" controls>
+                            <video width="100%" autoplay loop onclick="moveToFirst(this)" controls>
                                 <source src="./content/video/AC MILAN NEW KIT 24&25/WhatsApp Video 2024-07-14 at 02.23.17.mp4" type="video/mp4">
                             </video>
                             <div class="video-description">
@@ -340,7 +340,7 @@
                             </div>
                         </section>
                         <section class="video-card">
-                            <video width="100%" onclick="moveToFirst(this)" controls>
+                            <video width="100%" autoplay loop onclick="moveToFirst(this)" controls>
                                 <source src="./content/video/AC MILAN NEW KIT 24&25/WhatsApp Video 2024-07-14 at 02.20.12.mp4" type="video/mp4">
                             </video>
                             <div class="video-description">
@@ -349,7 +349,7 @@
                             </div>
                         </section>
                         <section class="video-card">
-                            <video width="100%" onclick="moveToFirst(this)" controls>
+                            <video width="100%" autoplay loop onclick="moveToFirst(this)" controls>
                                 <source src="./content/video/AC MILAN NEW KIT 24&25/WhatsApp Video 2024-07-14 at 03.28.11.mp4" type="video/mp4">
                             </video>
                             <div class="video-description">
@@ -358,7 +358,7 @@
                             </div>
                         </section>
                         <section class="video-card">
-                            <video width="100%" onclick="moveToFirst(this)" controls>
+                            <video width="100%" autoplay loop onclick="moveToFirst(this)" controls>
                                 <source src="./content/video/MATCH/WhatsApp Video 2024-07-14 at 02.18.51.mp4" type="video/mp4">
                             </video>
                             <div class="video-description">
@@ -367,7 +367,7 @@
                             </div>
                         </section>
                         <section class="video-card">
-                            <video width="100%" onclick="moveToFirst(this)" controls>
+                            <video width="100%" autoplay loop onclick="moveToFirst(this)" controls>
                                 <source src="./content/video/AC MILAN/WhatsApp Video 2024-07-14 at 03.40.07.mp4" type="video/mp4">
                             </video>
                             <div class="video-description">
@@ -376,7 +376,7 @@
                             </div>
                         </section>
                         <section class="video-card">
-                            <video width="100%" onclick="moveToFirst(this)" controls>
+                            <video width="100%" autoplay loop onclick="moveToFirst(this)" controls>
                                 <source src="./content/video/AC MILAN/WhatsApp Video 2024-07-14 at 03.40.07.mp4" type="video/mp4">
                             </video>
                             <div class="video-description">
@@ -510,27 +510,38 @@
         });
         </script>
         <script>
-        const videoSection = document.querySelector('.video-section');
-        const firstVideo = videoSection.querySelector('.video-card:first-child');
-
-        videoSection.addEventListener('scroll', () => {
-            if (videoSection.scrollLeft === 0) {
-                firstVideo.classList.add('highlight');
-            } else {
-                firstVideo.classList.remove('highlight');
-            }
-        });
-
-        document.querySelectorAll('.video-card video').forEach(video => {
-            video.addEventListener('play', () => {
-                const videoCard = video.closest('.video-card');
-                const videoCardLeft = videoCard.offsetLeft;
-                videoSection.scrollTo({
-                    left: videoCardLeft,
-                    behavior: 'smooth'
+            document.querySelectorAll('video').forEach(video => {
+                video.addEventListener('play', function () {
+                    document.querySelectorAll('video').forEach(v => {
+                        if (v !== video) {
+                            v.pause();
+                        }
+                    });
                 });
             });
-        });
+        
+            document.addEventListener('DOMContentLoaded', function () {
+                const modeSelectors = document.querySelectorAll('input[name="color-mode"]');
+        
+                modeSelectors.forEach(selector => {
+                    selector.addEventListener('change', function () {
+                        document.body.className = ''; // Remove all classes
+                        document.body.classList.add(this.value); // Add the selected mode class
+                    });
+                });
+            });
+        
+            const videoSection = document.querySelector('.video-section');
+            document.querySelectorAll('.video-card video').forEach(video => {
+                video.addEventListener('play', () => {
+                    const videoCard = video.closest('.video-card');
+                    const videoCardLeft = videoCard.offsetLeft;
+                    videoSection.scrollTo({
+                        left: videoCardLeft,
+                        behavior: 'smooth'
+                    });
+                });
+            });
         </script>
         <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -555,7 +566,7 @@
             });
         });
         </script>
-        <script>
+        <!-- <script>
         document.querySelectorAll('video').forEach(video => {
             video.addEventListener('play', function () {
                 document.querySelectorAll('video').forEach(v => {
@@ -576,6 +587,6 @@
                 });
             });
         });
-        </script>
+        </script> -->
     </body>
 </html>
