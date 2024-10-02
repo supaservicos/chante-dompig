@@ -37,8 +37,11 @@
 
     .video-card {
         overflow: hidden;
-        height: 50rem; 
         border-radius: 1rem;
+    }
+
+    .video-card video{
+        height: 45rem; 
     }
 
     .hero-section .hero-content {
