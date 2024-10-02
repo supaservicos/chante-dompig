@@ -43,13 +43,13 @@ body.mode-1 .hero-section {
 /* Mode 2 */
 body.mode-2 .hero-section {
     /* background-image: url('/content/photo/image00038.jpeg'); */
-    background-image: url('../../content/photo/image00038.jpeg');
+    background-image: url('../../content/photo/image00038.png');
 }
 
 /* Mode 3 */
 body.mode-3 .hero-section {
     /* background-image: url('/content/photo/image00030.jpeg'); */
-    background-image: url('../../content/photo/image00030.jpeg');
+    background-image: url('../../content/photo/image00030.png');
 }
 
 /* Example of primary color changes */

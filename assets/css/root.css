@@ -159,3 +159,7 @@ p{
     transition: all 0.3s ease;
     color: var(--primary-color);
 }
+
+.off{
+    display: none;
+}
