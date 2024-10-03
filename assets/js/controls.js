@@ -38,28 +38,28 @@ function createSlider(contentArray, sectionId, prevButtonId, nextButtonId) {
 
 const highContent = [
     {
-        background: 'linear-gradient(180deg, #ffffff00 0%, #6f717106 63%, #22242453 79%), url("../content/photo/image00014.png")',
+        background: 'linear-gradient(180deg, #ffffff00 0%, #6f717106 63%, #22242453 79%), url("../content/photo/image00014.webp")',
         content: `
             <h2>Pomigliano W <text>VS</text> AC MILAN</h2>
             <h2>0 <text>-</text> 4</h2>
             <p>Chanté-Mary, scores 2 goals in AC Milan's victory against Pomigliano W, ending the game with a difference of 4 - 0.</p>`
     },
     {
-        background: 'linear-gradient(180deg, #ffffff00 0%, #6f717106 63%, #22242453 79%), url("../content/photo/image00013.png")',
+        background: 'linear-gradient(180deg, #ffffff00 0%, #6f717106 63%, #22242453 79%), url("../content/photo/image00013.webp")',
         content: `
             <h2>JUSTIMAGINE <text>VS</text> AC MILAN</h2>
             <h2>0 <text>-</text> 8</h2>
             <p>Chanté-Mary, scores 2 goals in AC Milan's victory against JUSTIMAGINE, ending the game with a difference of 4 - 0.</p>`
     },
     {
-        background: 'linear-gradient(180deg, #ffffff00 0%, #6f717106 63%, #22242453 79%), url("../content/photo/image00033.png")',
+        background: 'linear-gradient(180deg, #ffffff00 0%, #6f717106 63%, #22242453 79%), url("../content/photo/image00033.webp")',
         content: `
             <h2>This is <text>JUST</text> An Example</h2>
             <h2>4 <text>-</text> 4</h2>
             <p>Chanté-Mary, scores 2 goals in An examplevictory against Pomigliano W, ending the game with a difference of 4 - 0.</p>`
     },
     // {
-    //     background: 'linear-gradient(180deg, #ffffff00 0%, #6f717106 63%, #22242453 79%), url("../content/photo/image00027.png")',
+    //     background: 'linear-gradient(180deg, #ffffff00 0%, #6f717106 63%, #22242453 79%), url("../content/photo/image00027.webp")',
     //     content: `
     //         <h2>Pomigliano W <text>VS</text> AC MILAN</h2>
     //         <h2>0 <text>-</text> 4</h2>
@@ -69,19 +69,19 @@ const highContent = [
 
 const nationalContent = [
     {
-        background: 'linear-gradient(180deg, #ffffff00 0%, #6f717106 63%, #22242453 79%), url("../content/photo/image00028.png")',
+        background: 'linear-gradient(180deg, #ffffff00 0%, #6f717106 63%, #22242453 79%), url("../content/photo/image00028.webp")',
         content: `
         
            `
     },
     {
-        background: 'linear-gradient(180deg, #ffffff00 0%, #6f717106 63%, #22242453 79%), url("../content/photo/image00029.png")',
+        background: 'linear-gradient(180deg, #ffffff00 0%, #6f717106 63%, #22242453 79%), url("../content/photo/image00029.webp")',
         content: `
         
            `
     },
     {
-        background: 'linear-gradient(180deg, #ffffff00 0%, #6f717106 63%, #22242453 79%), url("../content/photo/image00030.png")',
+        background: 'linear-gradient(180deg, #ffffff00 0%, #6f717106 63%, #22242453 79%), url("../content/photo/image00030.webp")',
         content: `
         
            `
@@ -91,19 +91,19 @@ const nationalContent = [
 
 const brandsContent = [
     {
-        background: 'linear-gradient(180deg, #ffffff00 0%, #6f717106 63%, #22242453 79%), url("../content/photo/image00001.png")',
+        background: 'linear-gradient(180deg, #ffffff00 0%, #6f717106 63%, #22242453 79%), url("../content/photo/image00001.webp")',
         content: `
             <p><text>PUMA</text>  OFF-WHITE  MATCHDAY</p>
            `
     },
     // {
-    //     background: 'url("../content/photo/Volkswagen/WhatsApp Image 2024-07-14 at 03.03.21 (3).png")',
+    //     background: 'url("../content/photo/Volkswagen/WhatsApp Image 2024-07-14 at 03.03.21 (3).webp")',
     //     content: `
     //         <p>PUMA    OFF-WHITE  MATCHDAY</p>
     //        `
     // },
     {
-        background: 'url("../content/photo/OFF WHITE/WhatsApp Image 2024-07-14 at 03.03.20 (3).png")',
+        background: 'url("../content/photo/OFF WHITE/WhatsApp Image 2024-07-14 at 03.03.20 (3).webp")',
         content: `
             <p>PUMA  <text>OFF-WHITE</text>  MATCHDAY</p>
            `
