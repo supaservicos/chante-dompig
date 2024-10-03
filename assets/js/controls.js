@@ -107,6 +107,12 @@ const brandsContent = [
         content: `
             <p>PUMA  <text>OFF-WHITE</text>  MATCHDAY</p>
            `
+    },
+    {
+        background: 'linear-gradient(180deg, #ffffff00 0%, #6f717106 63%, #22242453 79%), url("../content/photo/image00008.webp")',
+        content: `
+            <p>PUMA  OFF-WHITE  <text>MATCHDAY</text></p>
+           `
     }
 ]
 createSlider(highContent , 'highlights', 'prev-button1', 'next-button1');
