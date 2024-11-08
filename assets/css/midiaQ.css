@@ -43,7 +43,9 @@
     .video-card video{
         height: 45rem; 
     }
-
+    .hero-section{
+        background-position: center;
+    }
     .hero-section .hero-content {
         width: 100%;
         height: 90%;

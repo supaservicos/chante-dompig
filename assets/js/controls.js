@@ -1,6 +1,8 @@
 function createSlider(contentArray, sectionId, prevButtonId, nextButtonId) {
     let currentIndex = 0;
     let intervalId;
+    let startX = 0;
+    let endX = 0;
 
     const hlsection = document.getElementById(sectionId);
     const heroContentContainer = hlsection.querySelector('.section-content');
@@ -31,9 +33,29 @@ function createSlider(contentArray, sectionId, prevButtonId, nextButtonId) {
     document.getElementById(nextButtonId).addEventListener('click', nextHero);
     document.getElementById(prevButtonId).addEventListener('click', prevHero);
 
-    // startAutoRotate();
+    // Touch events for swiping
+    hlsection.addEventListener('touchstart', (event) => {
+        startX = event.touches[0].clientX;
+    });
+
+    hlsection.addEventListener('touchend', (event) => {
+        endX = event.changedTouches[0].clientX;
+        handleSwipe();
+    });
+
+    function handleSwipe() {
+        const swipeThreshold = 50; // Minimum distance for a swipe gesture
+        if (startX - endX > swipeThreshold) {
+            nextHero(); // Swipe left to go to the next hero
+        } else if (endX - startX > swipeThreshold) {
+            prevHero(); // Swipe right to go to the previous hero
+        }
+    }
+
+    // Initialize the slider
     updateHero();
 }
+
 
 
 const highContent = [

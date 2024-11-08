@@ -13,6 +13,7 @@
 
 html{
     font-size: 60.3%;
+    height: 100%;
     overflow: hidden;
     scroll-behavior: smooth;
 }
