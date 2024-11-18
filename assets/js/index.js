@@ -1,15 +1,7 @@
-const menu = document.getElementById('menu');
 const hero = document.getElementById('home');
-const scrollContainer = document.getElementById('main');
 const aboutVar = document.getElementById('about');
+//const scrollContainer = document.getElementById('body');
 
-scrollContainer.addEventListener('scroll', function() {
-    if ((scrollContainer.scrollTop > hero.offsetHeight - menu.offsetHeight)||(scrollContainer.scrollTop > about.offsetHeight - menu.offsetHeight)) {
-        menu.classList.add('scrolled');
-    } else {
-        menu.classList.remove('scrolled');
-    }
-});
 
 function about(){
     hero.classList.toggle("off");
@@ -27,3 +19,21 @@ setVh();
 
 // Atualize ao redimensionar a janela
 window.addEventListener('resize', setVh);
+
+
+const LazyLoading = () => { 
+    const listaimagens = document.querySelectorAll("[data-src]");
+    listaimagens.forEach((imagem) => {
+        if (imagem.getBoundingClientRect().top < window.innerHeight + 250) {
+            imagem.src = imagem.getAttribute("data-src");
+            imagem.removeAttribute("data-src");
+        }
+    });
+};
+
+window.onload = () =>{
+    LazyLoading()
+}
+
+document.body.addEventListener('scroll', () => LazyLoading());
+

@@ -1,5 +1,7 @@
 :root {
     /* COLOURS */
+    --vh: 100%;
+    
     --primary-color: #E11C2B;
     --second-color: #0066A7;
     --third-color: #FB6A28;
@@ -53,8 +55,8 @@
 }
 
 .content{
-    padding: 5rem;
-    height: 100vh;
+
+    height: calc(var(--vh, 1vh) * 100);
 }
 
 .main-container{
