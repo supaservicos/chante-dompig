@@ -17,26 +17,26 @@ html{
     overflow: hidden;
     scroll-behavior: smooth;
 }
-.main-container{
+body{
     overflow: hidden;
     height: 100vh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory;
     position: relative;
     user-select: none;
+    background: var(--dark-color);
 }
-.main-container::-webkit-scrollbar
-{
+body::-webkit-scrollbar{
     width: 0.5rem;
 }
-.main-container::-webkit-scrollbar-thumb{
+body::-webkit-scrollbar-thumb{
     background: var(--primary-color);
     border-radius: 5rem;
 }
 
 
 header{
-    background-color: var(--dark-color);
+    background: linear-gradient(180deg, #0000006c 0%, #22242400 100%);
     color: var(--text-white);
     padding: 1.5rem 4rem;
     width: 100%;
@@ -44,9 +44,7 @@ header{
     top: 0;
     z-index: 1000;
 }
-header.scrolled {
-    background: linear-gradient(180deg, #0000006c 0%, #22242400 100%);
-}
+
 .text-logo{
     font-size: 2rem;
     color: var(--text-white);
@@ -83,19 +81,26 @@ header.scrolled {
 }
 
 .hero-section{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../content/hero-bg/hbg-1.png');
+    background-image: url('../../content/photo/image00012.webp');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     padding: 5rem 0;
     scroll-snap-align: start;
     scroll-snap-stop: normal; 
+    color: var(--white-color);
 }
 .hero-section-about{
     background: var(--black-color);
     padding: 10rem;
+    height: 100vh;
     scroll-snap-align: start;
     scroll-snap-stop: normal; 
+    color: var(--white-color);
+}
+
+.top-chate-name-box, .text-box{
+    gap: 2rem;
 }
 
 .hero-section .hero-content{
@@ -132,6 +137,7 @@ header.scrolled {
 .name-chate h1{
     font-size: 4rem;
     line-height: 1;
+    color: var(--white-color);
 }
 
 .name-chate h1:nth-child(2){
@@ -188,8 +194,8 @@ header.scrolled {
 }
 
 .score-card{
-    background-color: var(--dark-color);
-    border: 1px solid var(--light-color);
+    background-color: #121212c3;
+    /*border: 1px solid var(--light-color);*/
     color: var(--text-white);
     padding: 1rem 2rem 3rem 2rem ;
     border-radius: 1rem;
@@ -218,9 +224,23 @@ header.scrolled {
 
 /*Highlights*/
 
+.grand-section [src]{
+    width: 100%;
+    height: calc(var(--vh, 1vh) * 100);
+    position: absolute;
+    z-index: 100;
+    object-fit: cover;
+    transition: 0.6s;
+}
+
+.grand-section [data-src]{
+    width: 0;
+    height: 0;
+    z-index: 100;
+}
 
 .seccao{
-    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     padding: 6rem 7rem;
     background-position: top;
     background-size: cover;
@@ -232,12 +252,15 @@ header.scrolled {
     color: var(--primary-color);
     font-size: 5rem;
     font-weight: 700;
+    z-index: 150;
 }
 .section-group{
     gap: 2rem;
     width: 40rem;
     font-weight: 700;
     display: flex;
+    z-index: 150;
+    color: var(--white-color);
 }
 #brands .section-group{
     width: 100%;
@@ -246,6 +269,7 @@ header.scrolled {
     font-size: var(--mid-sz);
     line-height: 29.3px;
 }
+
 .section-group p{
     font-size: 500;
     font-size: 2rem;
@@ -255,9 +279,12 @@ text{
 }
 
 .partners-section{
-    background: linear-gradient(180deg, #000000d0 , #000000d0), url(./content/photo/image00015.jpeg);
+    z-index: 200;
+    height: calc(var(--vh, 1vh) * 100);
+    background: linear-gradient(180deg, #000000d0 , #00000078), url(./content/photo/image00015.jpeg);
     background-position: center;
 }
+
 .partners-area{
     width: 100%;
     gap: 2rem;
@@ -267,10 +294,14 @@ text{
 .partner-card img{
     width: 10rem;
 }
-
+#more{
+    background: var(--dark-color) ;
+    z-index: 200;
+}
 footer{
     padding: 3rem 3rem 2rem 3rem;
     background: var(--dark-color);
+    color: var(--white-color);
     scroll-snap-align: start;
     scroll-snap-stop: normal; 
     gap: 2rem;
@@ -313,6 +344,7 @@ footer nav a{
 
 
 .video-section {
+
     overflow-x: auto;
     display: flex;
     align-items: center;
@@ -330,6 +362,9 @@ footer nav a{
 .video-section::-webkit-scrollbar{
     background: var(--primary-color);
     border-radius: 5rem;
+}
+.video-description{
+    color: var(--white-color);
 }
 
 .highlight {
